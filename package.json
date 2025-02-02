@@ -1,0 +1,26 @@
+{
+  "name": "javascript-tutorial",
+  "version": "1.0.0",
+  "main": "animation.js",
+  "scripts": {
+    "dev": "nodemon ecomm.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "nls": "filename.js",
+    "watchit": "coderunner.js"
+  },
+  "dependencies": {
+    "caporal": "^1.4.0",
+    "chokidar": "^4.0.3",
+    "cookie-session": "^2.1.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "lodash.debounce": "^4.0.8",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9"
+  },
+  "description": ""
+}
