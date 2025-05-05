@@ -1,7 +1,7 @@
 const express = require('express');
-const cartsRepo = require('./cart');
+const cartsRepo = require('../repositories/cart');
 const productsRepo = require('./products');
-const cartShowTemplate = require('./show');
+const cartShowTemplate = require('../views/carts/show');
 //const { router } = require('./auth');
 
 const router = express.Router();

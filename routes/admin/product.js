@@ -3,9 +3,9 @@ const multer = require('multer');
 
 const { handleErrors, requireAuth } = require('./middlewares');
 const productsRepo = require('./products');
-const productsNewTemplate = require('./new');
-const productsIndexTemplate = require('./index');
-const productsEditTemplate = require('./edit');
+const productsNewTemplate = require('../../views/admin/products/new');
+const productsIndexTemplate = require('../../views/admin/products/index');
+const productsEditTemplate = require('../edit');
 const { requireTitle, requirePrice } = require('./validators');
 
 const router = express.Router();
