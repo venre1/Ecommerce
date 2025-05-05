@@ -1,14 +1,8 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/ecomm.js" },
-      { "src": "/ecomm.js", "dest": "/ecomm.js" },
-      { "src": "/auth.js", "dest": "/auth.js" },
-      { "src": "/cart.js", "dest": "/cart.js" },
-      { "src": "/product.js", "dest": "/product.js" },
-      { "src": "/products.json", "dest": "/products.json" },
-      { "src": "/carts.json", "dest": "/carts.json" },
-      { "src": "/newusers.json", "dest": "/newusers.json" },
-      { "src": "/public/(.*)", "dest": "/public/$1" }
-    ]
-  }
-  
+  "builds": [
+    {
+      "src": "Dockerfile",
+      "use": "@vercel/docker"
+    }
+  ]
+}
