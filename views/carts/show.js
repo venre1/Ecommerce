@@ -1,4 +1,4 @@
-const layout = require('./layout');
+const layout = require('../customerlayout');
 module.exports = ({ items }) => {
    const totalPrice = items.reduce((prev,item)=>{
     return prev + item.quantity*item.product.price;

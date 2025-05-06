@@ -2,10 +2,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieSession =require('cookie-session');
-const authRouter = require('./auth');
-const AdminproductsRouter= require('./product');
-const productsRouter = require('./productspage');
-const cartsRouter = require('./cartsroute');
+const authRouter = require('./routes/admin/auth');
+const AdminproductsRouter= require('./routes/admin/product');
+const productsRouter = require('./routes/productspage');
+const cartsRouter = require('./routes/cartsroute');
 
 const app  = express();
 

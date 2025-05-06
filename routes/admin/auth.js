@@ -1,7 +1,7 @@
 const express = require('express');
 
 const { handleErrors } = require('./middlewares');
-const usersRepo = require('../../user');
+const usersRepo = require('../../repositories/user');
 const signupTemplate = require('../../views/admin/auth/signup');
 const signinTemplate = require('../../views/admin/auth/signin');
 const {
