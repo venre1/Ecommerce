@@ -1,8 +1,15 @@
 {
+  "version":2,
   "builds": [
     {
-      "src": "Dockerfile",
-      "use": "@vercel/docker"
+      "src": "ecomm.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes":[
+    {
+      "src":"/(.*)",
+      "dest":"ecomm.js"
     }
   ]
 }
