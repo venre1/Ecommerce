@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "animation.js",
   "scripts": {
-    "dev": "nodemon ecomm.js"
+    "dev": "nodemon runapp.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
     "watchit": "coderunner.js"
   },
   "dependencies": {
+    "body-parser": "^2.2.0",
     "caporal": "^1.4.0",
     "chokidar": "^4.0.3",
     "cookie-session": "^2.1.0",
