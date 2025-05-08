@@ -1,9 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 const crypto = require('crypto');
 const util = require('util');
 const Repository = require('./repository');
 
 const scrypt = util.promisify(crypto.scrypt);
+
+const filePath = path.join('/tmp', 'newusers.json');
 
 class UsersRepository extends Repository {
   async comparePasswords(saved, supplied) {
@@ -33,4 +36,4 @@ class UsersRepository extends Repository {
   }
 }
 
-module.exports = new UsersRepository('./tmp/newusers.json');
+module.exports = new UsersRepository(filePath);
