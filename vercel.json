@@ -1,15 +1,10 @@
 {
-  "version":2,
+  "version": 2,
   "builds": [
-    {
-      "src": "ecomm.js",
-      "use": "@vercel/node"
-    }
+    { "src": "ecomm.js", "use": "@vercel/node" }
   ],
-  "routes":[
-    {
-      "src":"/(.*)",
-      "dest":"ecomm.js"
-    }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)",     "dest": "ecomm.js" }
   ]
 }
